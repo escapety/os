@@ -496,7 +496,7 @@ void __init __weak thread_stack_cache_init(void)
 
 void __init __weak mem_encrypt_init(void) { }
 
-bool initcall_debug;
+bool initcall_debug = 1;
 core_param(initcall_debug, initcall_debug, bool, 0644);
 
 #ifdef TRACEPOINTS_ENABLED
