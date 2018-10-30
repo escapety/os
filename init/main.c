@@ -132,8 +132,12 @@ void (*__initdata late_time_init)(void);
 
 /* Untouched command line saved by arch-specific code. */
 char __initdata boot_command_line[COMMAND_LINE_SIZE];
+/* For lklab06 to use */
+EXPORT_SYMBOL(boot_command_line);
 /* Untouched saved command line (eg. for /proc) */
 char *saved_command_line;
+/* For lklab06 to use */
+EXPORT_SYMBOL(saved_command_line);
 /* Command line for parameter parsing */
 static char *static_command_line;
 /* Command line for per-initcall parameter parsing */
